@@ -20,7 +20,12 @@ Object.defineProperty(this || window || global, 'weird', {
 */
 
 let weird = [10, 20, 30];
-weird.join = weird.shift; // toString() richiama join()
+
+weird.valueOf = weird.shift; // == richiama per prima valueOf
+// oppure
+weird.toString = weird.shift; // == richiama per seconda toString
+// oppure
+weird.join = weird.shift; // toString normale richiama join()
 
 
 /*
