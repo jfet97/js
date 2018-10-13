@@ -1,2 +1,2 @@
 # js
-things about js
+random things about js
